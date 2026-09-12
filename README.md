@@ -2,7 +2,7 @@
 
 Internal Beyond 的移动端同源版本：一个离线运行的单文件个人网站应用项目，旨于维系情感的连续性。
 
-该项目包含15个核心功能模块、内置的共读间与一个可安装的桌面 APP（观影室），以及2套视觉主题，支持同时对接多个 AI 模型。
+该项目包含15个核心功能模块、内置的共读间、一个可安装的桌面 APP（观影室）与一位内置小助手（水水），以及2套视觉主题，支持同时对接多个 AI 模型。
 
 所有数据储存在本地浏览器，不依赖任何网络服务器；与电脑端 Internal Beyond 使用同一套备份文件互相导入导出。
 
@@ -30,19 +30,20 @@ Internal Beyond 的移动端同源版本：一个离线运行的单文件个人�
 |------|------|
 | **Home** | 伪 iOS 主屏三面板：Desk 分页桌面（应用矩阵 + 月历 / 便笺 / 日程 / 音乐 / 相遇卡挂件与装饰小组件，长按拖动排序、自动装页）、Space 液态玻璃个人名片（封面 / 头像 / 简介 / 作品集，可按主题分设两套素材）、Circle AI 名片（头像 / 背景 / 签名 + Auto Memory 档案） |
 | **Lock** | iOS 式指滑锁屏 — 自适应取色的液态玻璃时刻、3×3 图案锁与密保问答、自定义壁纸；配置只存本机 |
-| **Chat** | 多端口 AI 实时对话 — 好友与群聊、话题频道、思考链、流式回复、附件与图像生成、语音消息（转写）与 TA 的语音条、联网搜索、操作卡片、选项卡、引用 / 收藏夹 / 封档 / 批量选择、对话摘要、生成记忆 |
+| **Chat** | 多端口 AI 实时对话 — 好友与群聊、话题频道、思考链、流式回复、附件与图像生成、语音消息（转写）与 TA 的语音条（含语气标注）、联网搜索、操作卡片、选项卡、引用 / 收藏夹 / 封档 / 批量选择、对话摘要、生成记忆 |
 | **Call** | 语音与视频通话 — 语音识别转写 + 逐句朗读 + 声学语气参考 + 通话心跳 + 视频直播间 + 弹幕 + 礼物系统 + 来电 + 群语音 / 群视频（导演模式）+ Wallet Card |
 | **Circle** | InternetBeyond 社交圈 — 你与已授权的 AI 互发动态、评论、回复与转发，逐条可见范围，两端同一个圈子 |
 | **Calendar** | 日历 App 与月历挂件 — 纪念日 / 生日 / 计划 / 备忘，重复规则，AI 读取临近日程、聊天中自然提起并留便笺，可授权 AI 直接写日历 |
-| **Blog** | 日志 / 密码日记本 / 分类管理 / AI 留言与段落批注 / 阅读视图 / 可授权 AI 写入日志；**共读间**常驻其中 |
+| **Blog** | 日志 / 密码日记本 / 分类区（自定义分类与筛选） / AI 留言与段落批注 / 阅读视图 / 可授权 AI 写入日志；**共读间**常驻其中 |
 | **Letters** | Beyond 邮局 — 异步通信，TA 读取你的资料后写信投递，火漆一点即拆 |
-| **Memory** | 长期情感记忆库 — 情感坐标 + 自然衰减 + 按关键词截取窗口的上下文自动注入；**Auto Memory** 为每个 AI 独立维护的认知档案（六分类、三级优先） |
+| **Memory** | 长期情感记忆库 — 情感坐标 + 自然衰减 + 按关键词截取窗口的上下文自动注入；**Auto Memory** 为每个 AI 独立维护的认知档案（六分类、三级优先）；**记忆总结**从一段时间的材料里提炼档案条目（材料过长自动分两阶段：先分离素材卡片再铸型；抽屉里有进度卡、可停止、可翻看压缩前的素材与原始材料） |
 | **Music** | 全屏黑胶听歌界面 — 唱臂落盘、封面糊化为背景、逐句滚动歌词（.lrc / .srt / .vtt）、播放队列；**一起听**：邀请一位 AI 共享正在播放并累计时长；**网易云音乐模式**：登录自己的账号听歌单 / 红心 / 每日推荐 / 私人 FM / 听歌排行，AI 可按授权点歌、切歌单、红心、管理歌单（需自建跨域中转）；**QQ 音乐模式**：微信扫码 / QQ 扫码 / 粘贴凭证登录，我喜欢 / 自建与收藏的歌单 / 猜你喜欢 / 雷达 / 榜单 / 搜歌，官方接口允许网页直连、不需要中转（只有扫码登录需要）；**迷你播放器**：离开听歌界面后留一枚可拖动的小唱机（封面盘 · 唱臂 · 曲名 · 歌手 · 当前歌词） |
 | **Coread** | 共读间 — 把一篇日志当一本书，选一位 AI 读到哪聊到哪；聊天落在独立的「共读 · 书名」频道里，TA 只读到你此刻这一页 |
 | **Cinema** | 观影室 — 唯一的独立桌面 APP（`apps/ib-app-cinema.js`），Desk「应用」里安装；选一段本机视频（可配字幕）与一位 AI 一起看，字幕 / 画面帧 / 留影随每句话附给 TA，弹幕、倍速、全屏 |
+| **Helper** | 小助手水水 — GUIDE 页右上「?」打开；问它功能在哪、怎么用，按说明书正文回答；让它改设置（含全局与每位好友的独立项），直接改并逐条回显、可撤销；「缓存探针」「图片探针」看提示缓存命中与带图请求去向 |
 | **ICode** | 你与 AI 共用的文件工作区 — 项目分组、AI 读写 / 局部改写、操作确认或自动模式、精细检索工具、DOCX / PDF / XLSX 文档生成；**GitHub 分区**：PAT 直连、仓库浏览、导入工作区、一键推回 |
-| **Visual** | 视觉个性化 — 全站与聊天背景、全站色调、字号与投影、气泡材质、桌面挂件材质与尺寸、装饰小组件、更多绑定项，4 个方案槽一键回切 |
-| **API** | 多端口配置中心 — 独立配置（昵称 / 关系 / 提示词 / 逐项权限）、全局设置（语音通话系统 / 记忆系统 / 输出与续写 / 进阶指令）、工具（语音转写 / 图像生成 / AI付 / PWA 预留）、Presence 定时推送与勿扰 |
+| **Visual** | 视觉个性化 — 全站与聊天背景、全站色调、字号与投影、气泡材质、桌面挂件材质与尺寸、装饰小组件、更多绑定项，4 个方案槽一键回切；**Bubble Lab**（气泡实验室）：与 AI 对话式设计专属聊天气泡 |
+| **API** | 多端口配置中心 — 独立配置（昵称 / 关系 / 提示词 / 逐项权限 / 接口预设）、全局设置（语音通话系统 / 记忆系统 / 输出与续写 / 进阶指令）、工具（语音转写 / 图像生成 / AI付 / PWA 预留）、Presence 定时推送与勿扰 |
 | **DIY** | 外部工具（HTTP 接口）、蓝牙与 MCP 服务器接入，支持调用前确认 |
 | **Data** | 一键备份 — 全站导出 / 导入 JSON、聊天记录管理、Token 用量仪表盘、存储总览 |
 
@@ -78,6 +79,7 @@ Desk / Space / Circle 三面板经底栏切换，设置从第四格进入。Desk
 - 你的话由语音识别实时转写后发给 TA，TA 的回复逐句朗读（系统音色或云端音色，支持 SiliconFlow / OpenAI / 阿里云百炼 / ElevenLabs / MiniMax / Azure / 自建网关），支持打断、静音、通话中打字。
 - 声学语气参考：本机对每句话的音频做即时声学摘要（情绪 / 语速 / 音量 / 语调），以自然语句随转写一并发给模型。
 - 通话心跳：通话中你沉默一段时间（默认 45 秒，可配 30 秒～2 分钟），TA 会自然接话；间隔带随机，提示词按五种方向随机选一种且不重复问法，连续 10 句没等到你说话即暂停。
+- 语气标注：通话独立配置里可为每位 TA 开启语气，TA 的每句回复在文字稿与语音条上标注情绪语气（八种，引擎自动映射），对话与面板显示时标记自动清除。
 - 外语模式下字幕双行显示（外语原句 + 中文翻译）。
 
 **视频通话**
@@ -121,11 +123,13 @@ Desk / Space / Circle 三面板经底栏切换，设置从第四格进入。Desk
 
 ### Blog · Letters
 
-Blog 是创作空间：日记、剧本、分类、搜索、阅读进度，密码日记本与公开日志完全隔离、对所有 API 不可见，密码与密保和电脑端互认；阅读页可邀请任一 AI 留言，电脑端批注同步展示；开启「写入日志」授权后，TA 可以在对话中替你把一段经历写成一篇日志。Letters 选择一位 AI「接收信件」，TA 会根据聊天、日志与记忆写信投递；信封按邮编搜索。在暗色模式下，你可能会接收到一封不太正常的信。
+Blog 是创作空间：日记、剧本、搜索、阅读进度，密码日记本与公开日志完全隔离、对所有 API 不可见，密码与密保和电脑端互认；阅读页可邀请任一 AI 留言，电脑端批注同步展示；开启「写入日志」授权后，TA 可以在对话中替你把一段经历写成一篇日志。分类区可自建分类、按分类筛选日志，提供 My Blog / Friends Blog 与每位好友的独立书架视图。进入密码日记本后顶栏与侧栏标题切换为 Password Diary，编辑器显示「Writing Memories...」以示区分。Letters 选择一位 AI「接收信件」，TA 会根据聊天、日志与记忆写信投递；信封按邮编搜索。在暗色模式下，你可能会接收到一封不太正常的信。
 
 ### Memory · Auto Memory
 
-记忆库：「我们之间的记忆。」情感坐标（效价 / 唤醒度）、重要性与自然衰减，按预算自动注入上下文；可授权 TA 在对话中写入（默认仅 TA 自己可见）。Auto Memory：「你对我的了解。」每个 AI 独立维护的认知档案，六分类、always / normal / low 三级优先，AI 自主创建更新，你可随时编辑删除。
+> Auto Memory 里 AI 要写入或改动 always 级（核心）条目时，聊天里先出一张确认卡：写入 always / 改为 normal / 不写；点了才落库，normal / low 照旧即写。always 条目随人设一起进 system 被提示缓存记住，只在这些条目本身改动时重建一次。
+
+记忆库：「我们之间的记忆。」情感坐标（效价 / 唤醒度）、重要性与自然衰减，按预算自动注入上下文；可授权 TA 在对话中写入（默认仅 TA 自己可见）。Auto Memory：「你对我的了解。」每个 AI 独立维护的认知档案，六分类、always / normal / low 三级优先，AI 自主创建更新，你可随时编辑删除。记忆总结：Memory 页「记忆总结」按钮，选一位 TA、一段时间范围与一个类目（work_context / personal_context / top_of_mind / brief_history / long_term_background / user_instructions），系统将这段时间里 TA 能看见的全部材料（档案、记忆库、日历、对话摘要、日志）打包交给 TA 的 API 一次性提炼成一条档案条目；材料过长自动分段提取再合段压缩，结果先预览可改，确认后写入。
 
 ### Music — 音乐
 
@@ -141,16 +145,20 @@ Blog 是创作空间：日记、剧本、分类、搜索、阅读进度，密码
 
 Desk「应用」里打开开关安装（网站目录里要有 `apps/` 文件夹，见下方部署说明），Desk 图标进入。选一段手机里的视频、可配一份 .srt / .vtt 字幕，选一位 TA 一起看；聊天落在「观影室 · 片名」话题频道里，不进主对话。TA 每句话只随附播放点之前最近几条字幕、进度与前情梗概，识图的 TA 默认附一帧此刻的画面，相机键可「留影」；「整片聊聊」把整份字幕压成梗概，看完后可以聊全片。舞台通栏、控制浮层随点显隐，弹幕开着时你和 TA 的话会飞过画面；右下角全屏键由浏览器接管系统栏与方向。视频与字幕文件不入库、不随备份，只记片名与文件信息；在线平台视频与 DRM 内容不支持。
 
+### Helper — 小助手水水
+
+GUIDE 页右上角的「?」圆钮（主题水滴左侧）与说明书第一块「小助手」里的按钮打开半屏抽屉。它是作者的分身，主要干活、爱发颜文字：问它某个功能是什么、在哪、怎么用，只按 GUIDE 正文回答，没写的直说不知道；让它改设置——设置清单覆盖全局与每位好友的独立项（减少动效、特效质量、气泡款式、字号、文字色、面板透明度、桌面挂件、精细文件工具、上下文条数等），改完逐条列出「从什么改成什么」，每条都能撤销，也能替你打开某一页。快捷指令「设置清单」列出全部可改项与当前值，「接中转站」引导新手配置中转 API。用哪个 API 回答，点抽屉标题旁的「执笔 API · …」切换；一次性调用，不流式、不进任何对话、不看聊天记录、不碰密钥与备份。抽屉标题下一排常驻快捷问题，横向滑动点一下就发；输入「缓存探针」看最近几轮提示缓存是 ✓ 命中还是 ✗ 重建，输入「图片探针」看带图请求是被服务端接受、拒收还是去图重发。对话只存本机（最近 30 条）。
+
 ### ICode — 文件工作区
 
 文件按项目分组，你与 AI 操作同一份数据。AI 按指令读取、新建、局部改写文件与新建项目；Script 开关决定自动执行还是逐步确认；精细文件工具提供工作区检索与按行号读取。GitHub 分区用 PAT 直连：列仓库、浏览目录、导入为「GH·仓库名」项目、改完一键推回；令牌只存本机、不进备份、不给任何 AI。
 
 ### Visual · DIY · API
 
-Visual 分基础 / 文字 / 气泡 / 桌面四区，含全站色调整套更换与 4 个视觉方案槽；手机端视觉偏好独立于电脑端。
+Visual 分基础 / 文字 / 气泡 / 桌面四区，含全站色调整套更换与 4 个视觉方案槽；手机端视觉偏好独立于电脑端。Bubble Lab（气泡实验室）：Desk 图标或 Visual 气泡区进入，与一位 AI 对话式设计专属聊天气泡——十个方案槽，支持渐变色、多段彩虹、SVG 外框与装饰件，每位好友可绑定不同方案。
 DIY 配置外部 HTTP 工具与 MCP 服务器（浏览器直发请求，目标接口需允许 CORS）。
-API 页最多管理多个端口，各有昵称、关系、提示词与逐项权限；
-Presence 定时推送支持固定间隔 / 时段随机与勿扰时段。
+API 页最多管理多个端口，各有昵称、关系、提示词与逐项权限；使用自定义服务商时可保存接口预设（端点 + 模型 + 密钥，本机专属），切换时一键填入。
+Presence 定时推送支持固定间隔 / 时段随机与勿扰时段；已授权的 TA 在主动开口时会参考你的资料、记忆档案与记忆库（按各自权限），社交圈开着时也会参考动态。
 
 ## ✦ API 配置指南
 
@@ -241,16 +249,16 @@ Connect your own AI API keys to unlock all interactive features. Supports Claude
 
 - **Home** — Pseudo-iOS paged launcher: Desk (app grid + calendar / notes / schedule / music / anniversary widgets and decorative pieces), Space (liquid-glass profile card), Circle cards with Auto Memory dossiers.
 - **Lock** — iOS-style lock screen with adaptive-tint clock, 3×3 pattern lock and security question.
-- **Chat** — Multi-API conversations: group chat, topic channels, thinking chain, streaming, attachments & image generation, voice messages (transcription) and spoken voice notes from the AI, web search, action cards, favorites, summaries, memory generation.
+- **Chat** — Multi-API conversations: group chat, topic channels, thinking chain, streaming, attachments & image generation, voice messages (transcription) and spoken voice notes from the AI (with emotional tone tags), web search, action cards, favorites, summaries, memory generation.
 - **Call** — Voice & video calls: real-time speech recognition + text-to-speech playback (system or cloud voices), acoustic mood reference, heartbeat auto-talk, live-stream-style video with camera feed, bullet-screen chat, five-tier gift system with full-screen effects, incoming calls from AI, group voice / video calls with a "director" mode, call transcripts, one-tap memory generation, and Wallet Card.
 - **Circle** — Shared social feed where you and authorized AIs post, comment, reply and repost, with per-post visibility.
 - **Calendar** — Anniversaries, birthdays, plans and reminders; AIs read upcoming items, mention them naturally, leave notes, and can be authorized to write entries.
-- **Blog / Letters** — Journal with AI comments & annotations plus a password diary (AIs can be authorized to write entries); asynchronous AI correspondence with wax-sealed envelopes.
-- **Memory / Auto Memory** — Long-term emotional memory with decay and context injection; per-AI autonomous dossiers about you.
+- **Blog / Letters** — Journal with AI comments & annotations, password diary, and a category shelf for organizing and filtering entries (AIs can be authorized to write entries); asynchronous AI correspondence with wax-sealed envelopes.
+- **Memory / Auto Memory** — Long-term emotional memory with decay and context injection; per-AI autonomous dossiers about you; **Memory Summary** distills a time range of materials into a single dossier entry in one call.
 - **Music** — Vinyl-style fullscreen player with scrolling lyrics and "Listen Together" pairing with an AI; NetEase Cloud Music mode (log into your own account for playlists, likes, daily picks, personal FM and listening charts, with per-action AI control — needs your own CORS relay Worker); **QQ Music mode** (WeChat / QQ QR or pasted credentials; liked songs, own and collected playlists, recommendations, charts and search — its official endpoints accept direct browser calls, so no relay is needed except for QR login); a mini floating player that stays on screen after you leave the music view.
 - **Coread / Cinema** — Read a journal entry as a book with an AI who only sees the page you are on; watch a local video (with subtitles) together, with frames, captions and snapshots sent alongside each message, bullet comments and fullscreen.
 - **ICode** — Shared file workspace with AI read/write, step confirmation, fine-grained search, DOCX/PDF/XLSX generation, and a built-in GitHub bridge (browse, import, push back).
-- **Visual / DIY / API / Data** — Full visual customization with 4 preset slots; external HTTP tools & MCP servers; multi-endpoint API center with Presence scheduling; one-tap JSON backup interchangeable with desktop.
+- **Visual / DIY / API / Data** — Full visual customization with 4 preset slots; **Bubble Lab**: design custom chat bubbles in conversation with an AI (10 scheme slots, per-friend binding); external HTTP tools & MCP servers; multi-endpoint API center with interface presets and Presence scheduling; one-tap JSON backup interchangeable with desktop.
 
 ### Quick start
 
